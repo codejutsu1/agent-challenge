@@ -21,7 +21,7 @@ git clone https://github.com/codejutsu1/research-agent.git
 cd research-agent
 ```
 
-### 2. Install Dependencies (Step 1)
+### 2. Install Dependencies (Option 1)
 ```bash
 pnpm install
 ```
@@ -56,7 +56,7 @@ pnpm run dev
 
 You can access the url on http://127.0.0.1:8080 or http://localhost:8080
 
-### 4. Docker build and run commands (Step 2)
+### 4. Docker build and run commands (Option 2)
 - **Build Docker Image** : Make sure you have Docker installed on your machine. Build the docker image by running: 
 
 ```bash
