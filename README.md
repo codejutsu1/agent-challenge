@@ -3,7 +3,7 @@
 
 ## Agent Description and Purpose
 
-The **Research Assistant Agent** is an AI-powered agent built with Mastra framework designed to assist users in generating research summaries and PDF reports for any academic or technical topic. It leverages the **Semantic Scholar API** to retrieve research papers and provides a detailed summary of relevant academic papers.
+The **Research Assistant Agent** is an AI-powered agent built with [Mastra](https://mastra.ai/en/docs) framework and deployed on [Nosana](https://nosana.com/) designed to assist users in generating research summaries and PDF reports for any academic or technical topic. It leverages the **Semantic Scholar API** to retrieve research papers and provides a detailed summary of relevant academic papers.
 
 - **Purpose:** To help users quickly gather research data and generate structured reports.
 - **Primary Tools Used:**
@@ -98,3 +98,10 @@ Once the container is up and running, you can interact with the agent via HTTP r
 ### 7. Contributing
 We welcome contributions! Feel free to fork the repo, create a branch, and submit pull requests.
 
+
+
+
+### 8. Important Links
+- [Docker Container](https://hub.docker.com/repository/docker/codejutsu1/agent-challenge/general)
+- [Video Demo]()
+- [Nosana Deployment Proof]()
