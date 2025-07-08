@@ -21,7 +21,7 @@ git clone https://github.com/codejutsu1/research-agent.git
 cd research-agent
 ```
 
-### 2. Install Dependencies
+### 2. Install Dependencies (Step 1)
 ```bash
 pnpm install
 ```
@@ -47,9 +47,16 @@ MODEL_NAME_AT_ENDPOINT=qwen2.5:1.5b
 
 
 SEMANTIC_SCHOLAR_API_KEY=
+
+```
+To access the mastra playground - 
+```bash
+pnpm run dev
 ```
 
-### 4. Docker build and run commands
+You can access the url on http://127.0.0.1:8080 or http://localhost:8080
+
+### 4. Docker build and run commands (Step 2)
 - **Build Docker Image** : Make sure you have Docker installed on your machine. Build the docker image by running: 
 
 ```bash
@@ -71,12 +78,23 @@ Once the container is up and running, you can interact with the agent via HTTP r
 
   Send a `POST` request to the agent:
 
-    - **URL** - http://localhost:4111/api/agents/research-agent/generate
+    - **URL** - http://localhost:8080/api/agents/researchAgent/generate
     - Body (JSON)
 
     ```bash
-        {
-            "query": "AI in Finance"
+       {
+            "messages": [
+                { "role": "user", "content": "AI in Finance" }
+            ]
         }
     ```
+
+ ### 6. Troubleshooting
+ - Issue: `Gateway Timeout (504) error`
+    - *Solution* - Check the agent logs for missing API keys or network issues. Ensure that the Semantic Scholar API key is set correctly.
+- Issue: No response or empty content.
+    - *Solution* - Make sure that the agent was correctly registered and that the required tools are properly configured. Check the logs for any failures in tool execution.
+
+### 7. Contributing
+We welcome contributions! Feel free to fork the repo, create a branch, and submit pull requests.
 
