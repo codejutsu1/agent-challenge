@@ -102,4 +102,4 @@ We welcome contributions! Feel free to fork the repo, create a branch, and submi
 ### 8. Important Links
 - [Docker Container](https://hub.docker.com/repository/docker/codejutsu1/agent-challenge/general)
 - [Video Demo]()
-- [Nosana Deployment Proof]()
+- [Nosana Deployment Proof](https://5qvnbhzq2rxte1koizpdjaecaw1zex9fqlyxtz82a256.node.k8s.prd.nos.ci/agents/researchAgent/chat)

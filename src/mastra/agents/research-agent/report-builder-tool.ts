@@ -96,18 +96,18 @@ export const reportBuilderTool = createTool({
       contentType: "application/pdf",
     });
 
-    // const uploadRes = await axios.post("https://file.io", formData, {
-    //   headers: formData.getHeaders(),
-    // });
+    const uploadRes = await axios.post("https://file.io", formData, {
+      headers: formData.getHeaders(),
+    });
 
-    // if (!uploadRes.data.success) {
-    //   throw new Error("Failed to upload PDF to file.io");
-    // }
+    if (!uploadRes.data.success) {
+      throw new Error("Failed to upload PDF to file.io");
+    }
     
-    // console.log(uploadRes.data)
+    console.log(uploadRes.data)
 
-    // const downloadUrl = uploadRes.data.link;
-    // reportText += `\n\n[Download PDF Report](${downloadUrl})\n`;
+    const downloadUrl = uploadRes.data.link;
+    reportText += `\n\n[Download PDF Report](${downloadUrl})\n`;
 
     return {
       reportText,
