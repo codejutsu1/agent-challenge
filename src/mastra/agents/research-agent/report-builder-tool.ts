@@ -26,9 +26,10 @@ export const reportBuilderTool = createTool({
 
     let reportText = `# Research Summary: ${topic}\n\n`;
     summaries.forEach((s, i) => {
+      const abstract = s.abstract ? s.abstract : "No abstract available.";
       reportText += `### ${i + 1}. ${s.title} (${s.year})\n`;
       reportText += `**Authors:** ${s.authors.join(", ")}\n`;
-      reportText += `**Abstract:** ${s.abstract}\n`;
+      reportText += `**Abstract:** ${abstract}\n`;
       reportText += `**Link:** [Read paper](${s.url})\n\n`;
     });
 

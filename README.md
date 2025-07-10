@@ -83,10 +83,8 @@ Once the container is up and running, you can interact with the agent via HTTP r
 
     ```bash
        {
-            "messages": [
-                { "role": "user", "content": "AI in Finance" }
-            ]
-        }
+         "query": "AI in Education"
+      }
     ```
 
  ### 6. Troubleshooting
